@@ -11,6 +11,8 @@
 		1307DE5A2C35D41E00A5ACCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1307DE592C35D41E00A5ACCF /* ContentView.swift */; };
 		1307DE5C2C35D41F00A5ACCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1307DE5B2C35D41F00A5ACCF /* Assets.xcassets */; };
 		1307DE5F2C35D41F00A5ACCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1307DE5E2C35D41F00A5ACCF /* Preview Assets.xcassets */; };
+		1307DE692C35D4F700A5ACCF /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1307DE682C35D4F700A5ACCF /* CryptoModel.swift */; };
+		1307DE6B2C35D50A00A5ACCF /* CryptoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1307DE6A2C35D50A00A5ACCF /* CryptoService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		1307DE592C35D41E00A5ACCF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1307DE5B2C35D41F00A5ACCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1307DE5E2C35D41F00A5ACCF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1307DE682C35D4F700A5ACCF /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
+		1307DE6A2C35D50A00A5ACCF /* CryptoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,9 @@
 		1307DE562C35D41E00A5ACCF /* CryptoApp */ = {
 			isa = PBXGroup;
 			children = (
+				1307DE672C35D4D700A5ACCF /* NetWorking */,
+				1307DE662C35D4CD00A5ACCF /* ViewModels */,
+				1307DE652C35D4C600A5ACCF /* Models */,
 				1307DE572C35D41E00A5ACCF /* CryptoAppApp.swift */,
 				1307DE592C35D41E00A5ACCF /* ContentView.swift */,
 				1307DE5B2C35D41F00A5ACCF /* Assets.xcassets */,
@@ -65,6 +72,29 @@
 				1307DE5E2C35D41F00A5ACCF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1307DE652C35D4C600A5ACCF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1307DE682C35D4F700A5ACCF /* CryptoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1307DE662C35D4CD00A5ACCF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1307DE672C35D4D700A5ACCF /* NetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				1307DE6A2C35D50A00A5ACCF /* CryptoService.swift */,
+			);
+			path = NetWorking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +167,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1307DE6B2C35D50A00A5ACCF /* CryptoService.swift in Sources */,
+				1307DE692C35D4F700A5ACCF /* CryptoModel.swift in Sources */,
 				1307DE5A2C35D41E00A5ACCF /* ContentView.swift in Sources */,
 				1307DE582C35D41E00A5ACCF /* CryptoAppApp.swift in Sources */,
 			);
