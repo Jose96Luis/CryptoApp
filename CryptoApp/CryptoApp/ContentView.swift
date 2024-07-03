@@ -8,23 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var cryptoService = CryptoService()
+    @StateObject private var viewModel = CryptoViewModel()
     
     var body: some View {
         NavigationView {
-            List(cryptoService.cryptos) { crypto in
-                VStack(alignment: .leading) {
-                    Text(crypto.name)
-                        .font(.headline)
-                    Text("Price: \(crypto.priceUsd)")
-                    Text("Supply: \(crypto.supply)")
-                    Text("Change (24h): \(crypto.changePercent24Hr)%")
+            ScrollView {
+                ForEach(viewModel.cryptos) { crypto in
+                    CryptoCardView(crypto: crypto)
                 }
             }
             .navigationTitle("Cryptocurrencies")
-            .onAppear {
-                cryptoService.fetchCryptos()
-            }
         }
     }
 }
