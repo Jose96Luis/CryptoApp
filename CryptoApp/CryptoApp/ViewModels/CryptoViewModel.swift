@@ -21,16 +21,19 @@ class CryptoViewModel: ObservableObject {
     }
     
     func fetchCryptos() {
-        isLoading = true
-        errorMessage = nil
-        
-        coinGeckoService.fetchCryptos { cryptos in
-            DispatchQueue.main.async {
-                self.isLoading = false
-                if let cryptos = cryptos {
+        Task {
+            isLoading = true
+            errorMessage = nil
+            
+            if let cryptos = await coinGeckoService.fetchCryptos() {
+                DispatchQueue.main.async {
+                    self.isLoading = false
                     self.cryptos = cryptos
                     self.saveCryptosToUserDefaults(cryptos)
-                } else {
+                }
+            } else {
+                DispatchQueue.main.async {
+                    self.isLoading = false
                     self.cryptos = []
                     self.errorMessage = "Failed to load cryptos"
                 }

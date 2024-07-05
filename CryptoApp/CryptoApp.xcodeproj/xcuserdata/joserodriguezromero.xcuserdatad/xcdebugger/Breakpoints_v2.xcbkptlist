@@ -14,10 +14,40 @@
             filePath = "CryptoApp/ViewModels/CryptoViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "saveCryptosToUserDefaults(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3A5504F1-D41F-499B-89D4-9C68AF1E868D - a44839df46586bba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoApp.CryptoViewModel.saveCryptosToUserDefaults(Swift.Array&lt;CryptoApp.CoinGeckoCrypto&gt;) -&gt; ()"
+                  moduleName = "CryptoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joserodriguezromero/Projects/Xcode/Practicas/CryptoApp/CryptoApp/CryptoApp/CryptoApp/ViewModels/CryptoViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45">
+               </Location>
+               <Location
+                  uuid = "3A5504F1-D41F-499B-89D4-9C68AF1E868D - a44839df46586b07"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoApp.CryptoViewModel.saveCryptosToUserDefaults(Swift.Array&lt;CryptoApp.CoinGeckoCrypto&gt;) -&gt; ()"
+                  moduleName = "CryptoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joserodriguezromero/Projects/Xcode/Practicas/CryptoApp/CryptoApp/CryptoApp/CryptoApp/ViewModels/CryptoViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -30,10 +60,40 @@
             filePath = "CryptoApp/ViewModels/CryptoViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "saveCryptosToUserDefaults(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8AEE9CDE-7AC7-42A8-8D45-4DBA66297C14 - a44839df46586b64"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoApp.CryptoViewModel.saveCryptosToUserDefaults(Swift.Array&lt;CryptoApp.CoinGeckoCrypto&gt;) -&gt; ()"
+                  moduleName = "CryptoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joserodriguezromero/Projects/Xcode/Practicas/CryptoApp/CryptoApp/CryptoApp/CryptoApp/ViewModels/CryptoViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47">
+               </Location>
+               <Location
+                  uuid = "8AEE9CDE-7AC7-42A8-8D45-4DBA66297C14 - a44839df46586ac1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoApp.CryptoViewModel.saveCryptosToUserDefaults(Swift.Array&lt;CryptoApp.CoinGeckoCrypto&gt;) -&gt; ()"
+                  moduleName = "CryptoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joserodriguezromero/Projects/Xcode/Practicas/CryptoApp/CryptoApp/CryptoApp/CryptoApp/ViewModels/CryptoViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -46,10 +106,40 @@
             filePath = "CryptoApp/ViewModels/CryptoViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "loadCryptosFromUserDefaults()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "68134400-9954-4783-A4DD-6BEDBC552850 - e1d15f3842eee3a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoApp.CryptoViewModel.loadCryptosFromUserDefaults() -&gt; ()"
+                  moduleName = "CryptoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joserodriguezromero/Projects/Xcode/Practicas/CryptoApp/CryptoApp/CryptoApp/CryptoApp/ViewModels/CryptoViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54">
+               </Location>
+               <Location
+                  uuid = "68134400-9954-4783-A4DD-6BEDBC552850 - e1d15f3842eee3c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoApp.CryptoViewModel.loadCryptosFromUserDefaults() -&gt; ()"
+                  moduleName = "CryptoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joserodriguezromero/Projects/Xcode/Practicas/CryptoApp/CryptoApp/CryptoApp/CryptoApp/ViewModels/CryptoViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -62,10 +152,40 @@
             filePath = "CryptoApp/ViewModels/CryptoViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "loadCryptosFromUserDefaults()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1A75CB6B-4227-4D88-8302-092C51AEC9FA - e1d15f3842eee023"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoApp.CryptoViewModel.loadCryptosFromUserDefaults() -&gt; ()"
+                  moduleName = "CryptoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joserodriguezromero/Projects/Xcode/Practicas/CryptoApp/CryptoApp/CryptoApp/CryptoApp/ViewModels/CryptoViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58">
+               </Location>
+               <Location
+                  uuid = "1A75CB6B-4227-4D88-8302-092C51AEC9FA - e1d15f3842eee040"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoApp.CryptoViewModel.loadCryptosFromUserDefaults() -&gt; ()"
+                  moduleName = "CryptoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joserodriguezromero/Projects/Xcode/Practicas/CryptoApp/CryptoApp/CryptoApp/CryptoApp/ViewModels/CryptoViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

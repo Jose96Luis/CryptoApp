@@ -43,32 +43,26 @@ struct Roi: Codable {
 }
 
 class CoinGeckoService {
-    func fetchCryptos(completion: @escaping ([CoinGeckoCrypto]?) -> Void) {
-        guard let url = URL(string: "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd") else { return }
+    func fetchCryptos() async -> [CoinGeckoCrypto]? {
+        guard let url = URL(string: "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd") else { return nil }
         
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            if let data = data {
-                do {
-                    let decoder = JSONDecoder()
-                    if let cryptos = try? decoder.decode([CoinGeckoCrypto].self, from: data) {
-                        completion(cryptos)
-                    } else if let errorResponse = try? decoder.decode([String: String].self, from: data) {
-                        print("Error response from API: \(errorResponse)")
-                        completion(nil)
-                    } else {
-                        if let responseString = String(data: data, encoding: .utf8) {
-                            print("Unexpected response format: \(responseString)")
-                        }
-                        completion(nil)
-                    }
-                } catch {
-                    print("Error decoding: \(error)")
-                    completion(nil)
-                }
+        do {
+            let (data, _) = try await URLSession.shared.data(from: url)
+            let decoder = JSONDecoder()
+            if let cryptos = try? decoder.decode([CoinGeckoCrypto].self, from: data) {
+                return cryptos
+            } else if let errorResponse = try? decoder.decode([String: String].self, from: data) {
+                print("Error response from API: \(errorResponse)")
+                return nil
             } else {
-                print("Error fetching data: \(error?.localizedDescription ?? "Unknown error")")
-                completion(nil)
+                if let responseString = String(data: data, encoding: .utf8) {
+                    print("Unexpected response format: \(responseString)")
+                }
+                return nil
             }
-        }.resume()
+        } catch {
+            print("Error fetching data: \(error.localizedDescription)")
+            return nil
+        }
     }
 }
