@@ -16,6 +16,7 @@
 		1307DE6D2C35D77E00A5ACCF /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1307DE6C2C35D77E00A5ACCF /* CryptoViewModel.swift */; };
 		1307DE702C35D7B500A5ACCF /* CryptoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1307DE6F2C35D7B500A5ACCF /* CryptoCardView.swift */; };
 		1307DE722C36167900A5ACCF /* CoinGeckoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1307DE712C36167900A5ACCF /* CoinGeckoService.swift */; };
+		1307DE7E2C37850800A5ACCF /* CryptoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1307DE7D2C37850800A5ACCF /* CryptoStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		1307DE6C2C35D77E00A5ACCF /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
 		1307DE6F2C35D7B500A5ACCF /* CryptoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCardView.swift; sourceTree = "<group>"; };
 		1307DE712C36167900A5ACCF /* CoinGeckoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinGeckoService.swift; sourceTree = "<group>"; };
+		1307DE7D2C37850800A5ACCF /* CryptoStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				1307DE592C35D41E00A5ACCF /* ContentView.swift */,
 				1307DE5B2C35D41F00A5ACCF /* Assets.xcassets */,
 				1307DE5D2C35D41F00A5ACCF /* Preview Content */,
+				1307DE7D2C37850800A5ACCF /* CryptoStorage.swift */,
 			);
 			path = CryptoApp;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				1307DE702C35D7B500A5ACCF /* CryptoCardView.swift in Sources */,
 				1307DE692C35D4F700A5ACCF /* CryptoModel.swift in Sources */,
 				1307DE5A2C35D41E00A5ACCF /* ContentView.swift in Sources */,
+				1307DE7E2C37850800A5ACCF /* CryptoStorage.swift in Sources */,
 				1307DE582C35D41E00A5ACCF /* CryptoAppApp.swift in Sources */,
 				1307DE722C36167900A5ACCF /* CoinGeckoService.swift in Sources */,
 				1307DE6D2C35D77E00A5ACCF /* CryptoViewModel.swift in Sources */,
