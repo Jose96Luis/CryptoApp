@@ -12,9 +12,24 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
-                ForEach(viewModel.cryptos) { crypto in
-                    CryptoCardView(crypto: crypto)
+            VStack {
+                if viewModel.isLoading {
+                    ProgressView("Loading...")
+                        .progressViewStyle(CircularProgressViewStyle())
+                        .padding()
+                } else if let errorMessage = viewModel.errorMessage {
+                    Text(errorMessage)
+                        .foregroundColor(.red)
+                        .padding()
+                } else if viewModel.cryptos.isEmpty {
+                    Text("No cryptocurrencies available")
+                        .padding()
+                } else {
+                    ScrollView {
+                        ForEach(viewModel.cryptos) { crypto in
+                            CryptoCardView(crypto: crypto)
+                        }
+                    }
                 }
             }
             .navigationTitle("Cryptocurrencies")

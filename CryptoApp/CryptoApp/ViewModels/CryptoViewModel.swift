@@ -8,47 +8,30 @@
 import Foundation
 
 class CryptoViewModel: ObservableObject {
-    @Published var cryptos = [CryptoViewModelItem]()
+    @Published var cryptos = [CoinGeckoCrypto]()
+    @Published var isLoading = true
+    @Published var errorMessage: String? = nil
     
-    private var cryptoService = CryptoService()
+    private var coinGeckoService = CoinGeckoService()
     
     init() {
         fetchCryptos()
     }
     
     func fetchCryptos() {
-        cryptoService.fetchCryptos { cryptos in
+        isLoading = true
+        errorMessage = nil
+        
+        coinGeckoService.fetchCryptos { cryptos in
             DispatchQueue.main.async {
-                self.cryptos = cryptos.map(CryptoViewModelItem.init)
+                self.isLoading = false
+                if let cryptos = cryptos {
+                    self.cryptos = cryptos
+                } else {
+                    self.cryptos = []
+                    self.errorMessage = "Failed to load cryptos"
+                }
             }
         }
-    }
-}
-
-struct CryptoViewModelItem: Identifiable {
-    private var crypto: Crypto
-    
-    init(crypto: Crypto) {
-        self.crypto = crypto
-    }
-    
-    var id: String {
-        return crypto.id
-    }
-    
-    var name: String {
-        return crypto.name
-    }
-    
-    var priceUsd: String {
-        return crypto.priceUsd
-    }
-    
-    var supply: String {
-        return crypto.supply
-    }
-    
-    var changePercent24Hr: String {
-        return crypto.changePercent24Hr
     }
 }

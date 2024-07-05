@@ -15,6 +15,7 @@
 		1307DE6B2C35D50A00A5ACCF /* CryptoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1307DE6A2C35D50A00A5ACCF /* CryptoService.swift */; };
 		1307DE6D2C35D77E00A5ACCF /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1307DE6C2C35D77E00A5ACCF /* CryptoViewModel.swift */; };
 		1307DE702C35D7B500A5ACCF /* CryptoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1307DE6F2C35D7B500A5ACCF /* CryptoCardView.swift */; };
+		1307DE722C36167900A5ACCF /* CoinGeckoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1307DE712C36167900A5ACCF /* CoinGeckoService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		1307DE6A2C35D50A00A5ACCF /* CryptoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoService.swift; sourceTree = "<group>"; };
 		1307DE6C2C35D77E00A5ACCF /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
 		1307DE6F2C35D7B500A5ACCF /* CryptoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCardView.swift; sourceTree = "<group>"; };
+		1307DE712C36167900A5ACCF /* CoinGeckoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinGeckoService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				1307DE6A2C35D50A00A5ACCF /* CryptoService.swift */,
+				1307DE712C36167900A5ACCF /* CoinGeckoService.swift */,
 			);
 			path = NetWorking;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				1307DE692C35D4F700A5ACCF /* CryptoModel.swift in Sources */,
 				1307DE5A2C35D41E00A5ACCF /* ContentView.swift in Sources */,
 				1307DE582C35D41E00A5ACCF /* CryptoAppApp.swift in Sources */,
+				1307DE722C36167900A5ACCF /* CoinGeckoService.swift in Sources */,
 				1307DE6D2C35D77E00A5ACCF /* CryptoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

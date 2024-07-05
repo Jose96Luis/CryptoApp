@@ -19,4 +19,5 @@ struct Crypto: Codable, Identifiable {
     let supply: String
     let priceUsd: String
     let changePercent24Hr: String
+    let imageUrl: String?
 }
