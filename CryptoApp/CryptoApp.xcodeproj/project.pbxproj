@@ -71,7 +71,6 @@
 				1307DE592C35D41E00A5ACCF /* ContentView.swift */,
 				1307DE5B2C35D41F00A5ACCF /* Assets.xcassets */,
 				1307DE5D2C35D41F00A5ACCF /* Preview Content */,
-				1307DE7D2C37850800A5ACCF /* CryptoStorage.swift */,
 			);
 			path = CryptoApp;
 			sourceTree = "<group>";
@@ -87,6 +86,7 @@
 		1307DE652C35D4C600A5ACCF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1307DE7D2C37850800A5ACCF /* CryptoStorage.swift */,
 				1307DE682C35D4F700A5ACCF /* CryptoModel.swift */,
 			);
 			path = Models;

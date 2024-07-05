@@ -12,7 +12,6 @@ struct CryptoCardView: View {
     
     var body: some View {
         HStack(alignment: .center, spacing: 16) {
-            // Imagen de la criptomoneda y nombre
             VStack {
                 if let imageUrl = URL(string: crypto.image) {
                     AsyncImage(url: imageUrl) { phase in
@@ -40,14 +39,10 @@ struct CryptoCardView: View {
                     Text("No Image Available")
                         .frame(width: 80, height: 80)
                 }
-                // Nombre de la moneda
                 Text(crypto.name)
                     .font(.headline)
                     .foregroundColor(.primary)
             }
-            //.padding(.leading, 16)
-            // Padding de 16 puntos a la izquierda de la imagen y el nombre
-            // Detalles de la moneda
             VStack(alignment: .leading, spacing: 8) {
                 Text("Price: \(crypto.current_price, specifier: "%.2f")")
                     .font(.subheadline)
@@ -61,16 +56,15 @@ struct CryptoCardView: View {
                     .font(.subheadline)
                     .foregroundColor(crypto.price_change_percentage_24h >= 0 ? .green : .red)
             }
-            .padding(.horizontal, 32) // Espaciado interno para el VStack
+            .padding(.horizontal, 32)
         }
-        .padding(16) // Espaciado interno de la tarjeta principal
-        .frame(maxWidth: .infinity, minHeight: 120) // Fijar tamaño de la tarjeta
+        .padding(16)
+        .frame(maxWidth: .infinity, minHeight: 120)
         .background(Color.white)
         .cornerRadius(15)
         .shadow(radius: 5)
-        .padding(.horizontal, 16) 
-        // Padding exterior de 16 puntos a los lados izquierdo y derecho de la tarjeta principal
-        .padding(.top, 12) // Padding superior
+        .padding(.horizontal, 16)
+        .padding(.top, 12)
     }
 }
 
